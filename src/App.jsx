@@ -16,7 +16,7 @@ import TrungTam from './pages/TrungTam';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/phunubinhduong">
       <div className="min-h-screen bg-gradient-to-r from-blue-100 to-blue-300 flex flex-col justify-between">
         <Navbar />
         <main className="flex-grow py-10">
