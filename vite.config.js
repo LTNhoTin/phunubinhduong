@@ -1,10 +1,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+// https://vitejs.dev/config/
 export default defineConfig({
+  base: '/phunubinhduong/', // Cập nhật base URL cho GitHub Pages
   plugins: [react()],
-  base: '/phunubinhduong/', // Thay đổi base thành tên kho lưu trữ của bạn
   build: {
     outDir: 'dist'
+  },
+  server: {
+    host: true
   }
 });
