@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import BenCat from './pages/BenCat';
@@ -16,7 +16,7 @@ import TrungTam from './pages/TrungTam';
 
 const App = () => {
   return (
-    <Router basename="/phunubinhduong">
+    <Router>
       <div className="min-h-screen bg-gradient-to-r from-blue-100 to-blue-300 flex flex-col justify-between">
         <Navbar />
         <main className="flex-grow py-10">
