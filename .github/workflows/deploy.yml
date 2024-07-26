@@ -27,5 +27,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_token: ${{ secrets.hotrophunu }}
+          deploy_token: ${{ secrets.HOTROPHUNU }}
           publish_dir: ./dist
