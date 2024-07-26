@@ -18,11 +18,8 @@ jobs:
         with:
           node-version: '18.x'
 
-      - name: Clean install dependencies
-        run: |
-          rm -rf node_modules
-          rm -f package-lock.json
-          npm install
+      - name: Install dependencies
+        run: npm ci
 
       - name: Build project
         run: npm run build
@@ -30,5 +27,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+          deploy_token: ${{ secrets.hotrophunu }}
           publish_dir: ./dist
