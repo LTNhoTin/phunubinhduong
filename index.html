@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Binh Duong Contest</title>
     <link rel="icon" type="image/png" href="./favicon.jpg" />
+    <script>
+      // This script ensures that URL paths are correctly routed to the SPA
+      if (window.location.pathname !== '/') {
+        window.history.pushState({}, '', '/');
+      }
+    </script>
     <script type="module" crossorigin src="/phunubinhduong/assets/index-DNEbiX4n.js"></script>
     <link rel="stylesheet" crossorigin href="/phunubinhduong/assets/index-CNphnP2Z.css">
   </head>
