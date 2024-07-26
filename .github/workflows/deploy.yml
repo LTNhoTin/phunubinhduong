@@ -21,7 +21,6 @@ jobs:
       - name: Install dependencies
         run: |
           rm -rf node_modules
-          rm -rf node_modules dist
           rm -f package-lock.json
           npm install
 
